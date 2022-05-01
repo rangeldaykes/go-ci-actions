@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestFibonacci(t *testing.T) {
@@ -19,6 +20,7 @@ func TestFibonacci(t *testing.T) {
 		{"when input is 2, should return 1", args{2}, 1},
 		{"when input is 3, should return 2", args{3}, 2},
 		{"when input is 4, should return 2", args{4}, 3},
+		{"when input is 5, should return 5", args{5}, 5},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
